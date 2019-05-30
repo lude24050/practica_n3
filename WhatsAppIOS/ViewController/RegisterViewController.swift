@@ -65,7 +65,7 @@ UINavigationControllerDelegate{
                         })
                     }
                 }
-            
+            Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
                     self.performSegue(withIdentifier: "registradosegue", sender: nil)
                 print("El usuario fue creado exitosamente")
             }
@@ -74,9 +74,7 @@ UINavigationControllerDelegate{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "registrarsegue"{
-            
-        }
+        
         
     }
     

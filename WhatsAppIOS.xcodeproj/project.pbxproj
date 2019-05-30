@@ -17,6 +17,10 @@
 		58A7B5DE229F107F00C03CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58A7B5DD229F107F00C03CAC /* GoogleService-Info.plist */; };
 		58A7B5E0229F1E3200C03CAC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7B5DF229F1E3200C03CAC /* RegisterViewController.swift */; };
 		58A7B5E2229F3FDD00C03CAC /* LogeadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7B5E1229F3FDD00C03CAC /* LogeadoViewController.swift */; };
+		58ECE5F022A03F9F00A4F6D9 /* envioMensajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ECE5EF22A03F9F00A4F6D9 /* envioMensajeViewController.swift */; };
+		58ECE5F222A0619300A4F6D9 /* envioImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ECE5F122A0619300A4F6D9 /* envioImagenViewController.swift */; };
+		58ECE5F422A0764700A4F6D9 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ECE5F322A0764700A4F6D9 /* Snap.swift */; };
+		58ECE5F722A07C8A00A4F6D9 /* mensajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ECE5F622A07C8A00A4F6D9 /* mensajeViewController.swift */; };
 		D67AB27A8FCF6DF2480005E5 /* Pods_WhatsAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFBEBFF00E80665ECF78991 /* Pods_WhatsAppIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,10 @@
 		58A7B5DD229F107F00C03CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58A7B5DF229F1E3200C03CAC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		58A7B5E1229F3FDD00C03CAC /* LogeadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogeadoViewController.swift; sourceTree = "<group>"; };
+		58ECE5EF22A03F9F00A4F6D9 /* envioMensajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envioMensajeViewController.swift; sourceTree = "<group>"; };
+		58ECE5F122A0619300A4F6D9 /* envioImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envioImagenViewController.swift; sourceTree = "<group>"; };
+		58ECE5F322A0764700A4F6D9 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		58ECE5F622A07C8A00A4F6D9 /* mensajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mensajeViewController.swift; sourceTree = "<group>"; };
 		BFFBEBFF00E80665ECF78991 /* Pods_WhatsAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,6 +65,9 @@
 				58A7B5DF229F1E3200C03CAC /* RegisterViewController.swift */,
 				58A7B5E1229F3FDD00C03CAC /* LogeadoViewController.swift */,
 				28A8772222A02A1E00CD1D8C /* ElegirContactoViewController.swift */,
+				58ECE5EF22A03F9F00A4F6D9 /* envioMensajeViewController.swift */,
+				58ECE5F122A0619300A4F6D9 /* envioImagenViewController.swift */,
+				58ECE5F622A07C8A00A4F6D9 /* mensajeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -65,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				28A8772522A0331D00CD1D8C /* Usuario.swift */,
+				58ECE5F322A0764700A4F6D9 /* Snap.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -248,9 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58ECE5F722A07C8A00A4F6D9 /* mensajeViewController.swift in Sources */,
 				58A7B5E2229F3FDD00C03CAC /* LogeadoViewController.swift in Sources */,
+				58ECE5F222A0619300A4F6D9 /* envioImagenViewController.swift in Sources */,
+				58ECE5F422A0764700A4F6D9 /* Snap.swift in Sources */,
 				58A7B5E0229F1E3200C03CAC /* RegisterViewController.swift in Sources */,
 				28A8772622A0331D00CD1D8C /* Usuario.swift in Sources */,
+				58ECE5F022A03F9F00A4F6D9 /* envioMensajeViewController.swift in Sources */,
 				28A8772322A02A1E00CD1D8C /* ElegirContactoViewController.swift in Sources */,
 				58A7B5CE229F0E5800C03CAC /* iniciarSesionViewcontroller.swift in Sources */,
 				58A7B5CC229F0E5800C03CAC /* AppDelegate.swift in Sources */,
