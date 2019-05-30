@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A8772322A02A1E00CD1D8C /* ElegirContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8772222A02A1E00CD1D8C /* ElegirContactoViewController.swift */; };
+		28A8772622A0331D00CD1D8C /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8772522A0331D00CD1D8C /* Usuario.swift */; };
 		58A7B5CC229F0E5800C03CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7B5CB229F0E5800C03CAC /* AppDelegate.swift */; };
 		58A7B5CE229F0E5800C03CAC /* iniciarSesionViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7B5CD229F0E5800C03CAC /* iniciarSesionViewcontroller.swift */; };
 		58A7B5D1229F0E5800C03CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A7B5CF229F0E5800C03CAC /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		275ACCA2B9118AE3E9381A3F /* Pods-WhatsAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-WhatsAppIOS/Pods-WhatsAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		28A8772222A02A1E00CD1D8C /* ElegirContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirContactoViewController.swift; sourceTree = "<group>"; };
+		28A8772522A0331D00CD1D8C /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		50A7569367350FAA9873C9A7 /* Pods-WhatsAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppIOS.release.xcconfig"; path = "Target Support Files/Pods-WhatsAppIOS/Pods-WhatsAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 		58A7B5C8229F0E5800C03CAC /* WhatsAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A7B5CB229F0E5800C03CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +50,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A8772122A029BB00CD1D8C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58A7B5CD229F0E5800C03CAC /* iniciarSesionViewcontroller.swift */,
+				58A7B5DF229F1E3200C03CAC /* RegisterViewController.swift */,
+				58A7B5E1229F3FDD00C03CAC /* LogeadoViewController.swift */,
+				28A8772222A02A1E00CD1D8C /* ElegirContactoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		28A8772422A032F300CD1D8C /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				28A8772522A0331D00CD1D8C /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		3338A412B1F73045D9B306B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,15 +98,14 @@
 		58A7B5CA229F0E5800C03CAC /* WhatsAppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				28A8772422A032F300CD1D8C /* Modelos */,
+				28A8772122A029BB00CD1D8C /* ViewController */,
 				58A7B5DD229F107F00C03CAC /* GoogleService-Info.plist */,
 				58A7B5CB229F0E5800C03CAC /* AppDelegate.swift */,
-				58A7B5CD229F0E5800C03CAC /* iniciarSesionViewcontroller.swift */,
-				58A7B5DF229F1E3200C03CAC /* RegisterViewController.swift */,
 				58A7B5CF229F0E5800C03CAC /* Main.storyboard */,
 				58A7B5D2229F0E5900C03CAC /* Assets.xcassets */,
 				58A7B5D4229F0E5900C03CAC /* LaunchScreen.storyboard */,
 				58A7B5D7229F0E5900C03CAC /* Info.plist */,
-				58A7B5E1229F3FDD00C03CAC /* LogeadoViewController.swift */,
 			);
 			path = WhatsAppIOS;
 			sourceTree = "<group>";
@@ -228,6 +250,8 @@
 			files = (
 				58A7B5E2229F3FDD00C03CAC /* LogeadoViewController.swift in Sources */,
 				58A7B5E0229F1E3200C03CAC /* RegisterViewController.swift in Sources */,
+				28A8772622A0331D00CD1D8C /* Usuario.swift in Sources */,
+				28A8772322A02A1E00CD1D8C /* ElegirContactoViewController.swift in Sources */,
 				58A7B5CE229F0E5800C03CAC /* iniciarSesionViewcontroller.swift in Sources */,
 				58A7B5CC229F0E5800C03CAC /* AppDelegate.swift in Sources */,
 			);

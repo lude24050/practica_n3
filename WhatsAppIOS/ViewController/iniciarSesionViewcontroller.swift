@@ -19,12 +19,13 @@ class iniciarSesionViewcontroller: UIViewController {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) {(user, error) in
             print("Intentando iniciar sesion")
             if error != nil{
-                print("Se presento el siguiente erro:\(error)")
+                print("Se presento el siguiente error en el logeo:\(error)")
 //                self.mostrarAlerta(titulo: "Error", mensaje: "Su cuentea no esta registrada, porfavor registrese"
 //                    + "primero", accion: "Aceptar")
                 self.performSegue(withIdentifier: "registrarsegue", sender: nil)
             }else{
                 print("inicio de sesion exitoso")
+                Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
                 self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }

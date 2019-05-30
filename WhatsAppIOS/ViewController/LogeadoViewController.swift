@@ -12,6 +12,9 @@ import SDWebImage
 class LogeadoViewController: UIViewController {
     var imagenID = ""
     
+    @IBAction func CerrarSesion(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBOutlet weak var imgPerfil: UIImageView!
     override func viewDidLoad() {

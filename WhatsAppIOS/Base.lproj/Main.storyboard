@@ -134,7 +134,11 @@
                         <viewLayoutGuide key="safeArea" id="nRs-9S-NDA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Logeado" id="psx-Lj-1Zm">
-                        <barButtonItem key="leftBarButtonItem" title="Cerrar Sesion" id="88b-yS-koO"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cerrar Sesion" id="88b-yS-koO">
+                            <connections>
+                                <action selector="CerrarSesion:" destination="bPM-iX-feM" id="w70-ek-wY6"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="GF1-yF-gZ8"/>
                             <barButtonItem systemItem="compose" id="Zzu-it-MrE">
@@ -151,6 +155,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3t-7L-v7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1565.5999999999999" y="31.934032983508249"/>
+        </scene>
+        <!--Elegir Contacto View Controller-->
+        <scene sceneID="cMx-Mg-gBo">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="25a-Pm-Pg0" customClass="ElegirContactoViewController" customModule="WhatsAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nWk-be-yER">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8cQ-C6-3VJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="apQ-YQ-w8U" firstAttribute="trailing" secondItem="8cQ-C6-3VJ" secondAttribute="trailing" id="Gqn-1Q-kYO"/>
+                            <constraint firstItem="8cQ-C6-3VJ" firstAttribute="top" secondItem="apQ-YQ-w8U" secondAttribute="top" id="YMe-XW-js0"/>
+                            <constraint firstItem="8cQ-C6-3VJ" firstAttribute="leading" secondItem="apQ-YQ-w8U" secondAttribute="leading" id="bN3-nz-Cik"/>
+                            <constraint firstItem="apQ-YQ-w8U" firstAttribute="bottom" secondItem="8cQ-C6-3VJ" secondAttribute="bottom" id="m6K-8n-MOt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="apQ-YQ-w8U"/>
+                    </view>
+                    <connections>
+                        <outlet property="listausuarios" destination="8cQ-C6-3VJ" id="e1M-f3-77e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IB-9t-maN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="29"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LUQ-2A-gH3">
